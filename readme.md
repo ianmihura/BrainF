@@ -9,5 +9,6 @@ There's 2 different execution mechanism:
 - BFCompiler transpiles the BF code to an arbitrary bytecode, hoping to get some efficiency during compile-time (eg. identifying loop jumps and repeating opcodes). Then, the BFVM executes the bytecode.
 
 ### Compiling and executing a simple test
-
+```sh
 g++ -std=c++20 -O2 -Wall -Wextra bf.cpp -o bf && taskset -c 0 ./bf ./test.bf
+```
